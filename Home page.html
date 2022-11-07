@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Freehand&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+
+<style>
+
+.item1 {
+position: relative;
+
+}
+
+h1{
+  
+ 
+  font-size: 50px;
+  position: absolute;
+  color: white;
+  top: 200px;
+  right: 400px;
+}
+
+h2{
+  
+  
+  font-size: 50px;
+  position: absolute;
+  color: white;
+  top: 200px;
+  right: 150px;
+}
+
+img{
+
+  position: absolute;
+
+}
+
+.content{
+
+width:90%;
+margin: 30px auto 30px;
+
+}
+
+
+.content .main-content{
+  width: 70%;
+  float: left;
+  
+}
+
+.content .sidebar{
+
+  width:30%;
+  float: left;
+  height: 300px;
+
+
+}
+
+.form-style-6{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  width: 100%;
+  margin: 0px ;
+  padding: 50px;
+  background: #FBF3EE;
+
+}
+.form-style-6 h5{
+
+  padding: 20px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+  margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 0px ;
+  padding: 3%;
+  color: #555;
+  font: 95% Arial, Helvetica, sans-serif;
+border-radius: 6px;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+  box-shadow: 0 0 5px #E59C7C;
+  padding: 3%;
+  border: 1px solid #E59C7C;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  padding: 3%;
+  background: #E0AD97;
+  border-bottom: 0px ;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;  
+  color: #fff;
+border-radius: 6px;
+
+}
+
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+  background: #E59C7C;
+
+}
+
+
+
+
+
+
+.button {
+  border-radius: 0px;
+  background-color: #242A3A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 500px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+h6 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2B3147;
+}
+h6:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 2px;
+    content: " ";
+    text-shadow: none;
+    background-color: #BFACAA;
+    width: 185px;
+}
+
+h6:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 2px;
+    content: " ";
+    text-shadow: none;
+    background-color: #BFACAA;
+    width: 185px;
+}
+
+
+.footer {
+ position: static;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: #FBF3EE;
+ color: white;
+ text-align: center;
+ padding-top: 20px;
+ padding-bottom: 10px;
+
+}
+
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #E0AD97;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #E0AD97;
+  color: white;
+}
+
+.fa-google {
+  background: #E0AD97;
+  color: white;
+}
+
+.fa-instagram {
+  background: #E0AD97;
+  color: white;
+}
+
+
+#more {display: none;}
+
+</style>
+
+<script>
+  
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+
+
+
+
+<body>
+
+
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    
+      <div class="collapse navbar-collapse" id="mynavbar" style="margin-left: 350px;">
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Home page.html" style="margin-left: 100px; padding-top: 40px; font-family: 'Ubuntu Condensed', sans-serif; font-weight: bold; font-size: 18px;">HOME</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="About.html" style="margin-left: 100px; padding-top: 40px;font-family: 'Ubuntu Condensed', sans-serif;font-weight: bold; font-size: 18px;">ABOUT</a>
+        </li>
+
+       
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="Home page.html" style="margin-left: 80px;padding-top: 20px; font-family: 'Petit Formal Script', cursive; sans-serif; font-size: 40px; font-weight: bold; color:#2B3147;">LE THANH NAM<br><p style="font-family:'Ubuntu Condensed'; font-size:18px;margin-left: 80px; color:#E0AD97;">PHOTOGRAPHER & BLOGGER</p></a>
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="Contact us.html" style="margin-left: 100px; padding-top: 40px;font-family: 'Ubuntu Condensed', sans-serif;font-weight: bold; font-size: 18px;">CONTACT</a>
+        </li>
+        
+         <li class="nav-item">
+          <a class="nav-link" href="Gallery.html" style="margin-left: 100px; padding-top: 40px; font-family: 'Ubuntu Condensed', sans-serif;font-weight: bold; font-size: 18px;">GALLERY</a>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+<div class="content">
+    <div class="item1">
+        <img src="1610770549_Download-hinh-nen-may-tinh-Full-HD-do-phan-giai 1 1.png" style="width: 100%; padding-top:0px">
+        <h1 style="font-family:'Ubuntu Condensed';">Let's Explore <h2 style="font-family:'Petit Formal Script';">Together</h2></h1>
+       <img src="image 79.png" style="width: 30%; margin-left:150px; padding-top: 150px;">
+        </div>
+      </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="container">
+    <div class="row">
+    
+   <div class="col">
+       </div>
+    
+
+<div class="col" style="margin-left: 30px">
+       <h3 style="font-family:'Petit Formal Script'; font-size: 40px; font-weight: bold;">HI,</h3>
+       <h4 style="font-family:'Ubuntu Condensed';font-size: 30px; color:#E0AD97" >WELCOM TO MY BLOG</h4>  
+       
+       <p style="font-family:'Ubuntu Condensed'; font-size:16px"><br>Welcome to my first blog post! Ahh I am so excited to be writing this right now, and even more excited knowing that YOU are finally reading it! I am Nam, owner and author of Nam Blog (obviously, lol). I have been wanting to start my own lifestyle blog for about four years now. It’s something I am so passionate about and have wanted to do for a long time, but more on that later. For my first blog post I wanted to let you know more about me and what you can expect to see here!
+
+       <p style="font-family:'Ubuntu Condensed'; font-size:16px"><br>The original Nam started back in 2018 (anyone remember my OG site!?) That first space was a fun creative outlet for me to start, but I didn’t do much with it and definitely didn’t really know what I was doing. However, it has stayed in my mind since then and I always knew it was something I wanted to continue doing. There are so many reasons in my life that point to blogging. Like I said earlier, I love to write! Being able to share ideas and connect with new people through blogging is so fun and exciting to me. Blogging also allows me to pursue my hobby and passion of photography.<span id="dots">...</span><span id="more"> I love being behind the camera as well as in front of the lens. I have shared so much of my life through Instagram and YouTube, and now with this site I have a place to combine it all. Also, it allows me to be home with my baby! I could go on and on about how passionate and excited I am for this, but I think you get the point!</span></p>
+       <button style="background-color: black; color:white; font-family:'Ubuntu Condensed' ;" onclick="myFunction()" id="myBtn">Read more</button>
+       </div>
+       
+       </div>
+      
+
+</div>
+ 
+<br><br><br><br><br><br>
+
+
+
+<div class="content">
+  <div class="main-content">
+  
+
+    <h7 class="recent-post-title" style="font-family:'Petit Formal Script'; color: #E0AD97; font-weight:bold;margin-left: 550px;font-size:18px;"><ins>Lifestyle</ins></h7>
+       <br>
+       <h8 style="font-family:'Ubuntu Condensed'; font-size:30px; margin-left: 450px;">NEW STYLE IDEAS FOR HER</h8>  
+  <br><br>
+  <img src="image 877.png" style width="60%">
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <p style="font-family:'Ubuntu Condensed'; font-size: 16px"><br>“If I think honestly about my style, I’m still reconciling with how I’ve felt about my body. Growing up, I absorbed a lot of cultural and generational expectations around dressing — my mom<br> always said I should wear clothes that were ‘flattering.’ And flattering is code for looking thinner. So, I was always dressing to fix my ‘flaws.'”</p>
+
+       <p style="font-family:'Ubuntu Condensed'; font-size:16px"><br>“I grew uncomfortable wearing sleeveless tops or clingy fabrics. I remember feeling self-conscious about the size of my breasts and always wanting to hide in shapeless clothes. But I love<br>color and patterns, and now I try to approach fashion in a comfortable way. I still won’t wear a tube top or anything — maybe that enlightenment will come for me later — but I try to wear<br>the things I feel good in.”</p>
+  
+<br>
+  <button class="button"><span class="link-btn-chill light-orange" onclick="window.open('BLOG DETAIL.html')">Read more</span></button>
+
+<br><br><br><br>
+
+<div class="row">
+<div class="col">
+    <a href="Blog detail.html"><img src="image 867.png"style width="28%";></a>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <a class="recent-post-title" style="font-family:'Petit Formal Script'; color: #E0AD97; font-weight:bold;font-size:16px; margin-left: 200px;text-decoration:none;"href="Gallery.html"><ins>Nature</ins>,<ins>Travel</ins></a>
+       <br><br>
+       <a style="font-family:'Ubuntu Condensed'; font-size:25px;margin-left: 140px;text-decoration: none; color: black;" href="Blog detail.html">BEST TIME TO VISIT PARIS</a>  
+       <p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 200px;color: #E0AD97;">DECEMBER 15, 2022</p>
+       <p style="font-family:'Ubuntu Condensed'; font-size: 16px;text-align: center; margin-left: -15%;">PARIS! So many places to eat, so many moments standing <br>frozen deciding where to go.</p>
+  </div>
+
+  <div class="col">
+  <a href="Blog detail.html"><img src="image 899.png"style width="28%"></a>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <a class="recent-post-title" style="font-family:'Petit Formal Script'; color: #E0AD97; font-weight:bold;font-size:16px; margin-left: 220px;text-decoration:none;"href="Gallery.html"><ins>Lifestyle</ins></a>
+       <br><br>
+       <a style="font-family:'Ubuntu Condensed'; font-size:25px;margin-left: 86px;text-decoration: none; color: black;"href="Blog detail.html">EXPLORING THE ENGLISH COUNTRYSIDE</a>  
+        <p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 200px;color: #E0AD97;">DECEMBER 15, 2022</p>
+       <p style="font-family:'Ubuntu Condensed'; font-size: 16px;text-align: center; margin-left: -10%;">The boys and I flew directly from New York to England. Our first day, we stayed<br> in Killarney, a quaint town next to a national park.</p>
+
+  </div>
+
+</div>
+
+<br><br>
+
+<div class="row">
+<div class="col">
+    
+      <a href="Blog detail.html"><img src="image 900.png"style width="28%"></a>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <a class="recent-post-title" style="font-family:'Petit Formal Script'; color: #E0AD97; font-weight:bold;font-size:16px; margin-left: 230px;text-decoration:none;"href="Gallery.html"><ins>Food</ins></a>
+       <br><br>
+       <a style="font-family:'Ubuntu Condensed'; font-size:25px;margin-left: 165px;text-decoration: none; color: black;"href="Blog detail.html">REAL TALK FRIDAY</a>  
+       <p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 200px;color: #E0AD97;">DECEMBER 15, 2022</p>
+       <p style="font-family:'Ubuntu Condensed'; font-size: 16px;text-align: center; margin-left: -15%;">TThis morning, I’m feeling wanderlust-y. So, I’d love to ask: If money, weather and <br>COVID were no object, where in the world would you want to travel? My answer is easy…</p>
+  </div>
+
+  <div class="col">
+    
+     <a href="Blog detail.html"><img src="image 889.png"style width="28%"></a>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <a class="recent-post-title" style="font-family:'Petit Formal Script'; color: #E0AD97; font-weight:bold;font-size:16px; margin-left: 220px;text-decoration:none;"href="Gallery.html"><ins>Lifestyle</ins></a>
+       <br><br>
+       <a style="font-family:'Ubuntu Condensed'; font-size:25px;margin-left: 130px;text-decoration: none; color: black;"href="Blog detail.html">GREEN CORNER IN MY HOME</a>  
+       <p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 200px;color: #E0AD97;">DECEMBER 15, 2022</p>
+       <p style="font-family:'Ubuntu Condensed'; font-size: 16px;text-align: center; margin-left: -15%;">Clutter-free and Straightforward </p>
+
+  </div>
+
+</div>
+
+<br><br>
+<div class="row">
+<div class="col">
+    
+      <a href="Blog detail.html"><img src="image 8800.png"style width="28%"></a>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <a class="recent-post-title" style="font-family:'Petit Formal Script'; color: #E0AD97; font-weight:bold;font-size:16px; margin-left: 225px;text-decoration:none;"href="Gallery.html"><ins>Nature</ins></a>
+       <br><br>
+       <a style="font-family:'Ubuntu Condensed'; font-size:25px;margin-left: 120px;text-decoration:none; color:black;"href="Blog detail.html">VISIT GREAT SAND DUNES PARK</a>  
+       <p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 200px;color: #E0AD97;">DECEMBER 15, 2022</p>
+       <p style="font-family:'Ubuntu Condensed'; font-size: 16px;text-align: center; margin-left: -15%;">Spend 20 minutes living in the park, even if you <br>don't exercise, you will feel happy</p>
+  </div>
+
+  <div class="col">
+    
+     <a href="Blog detail.html"><img src="image 878.png"style width="28%"></a>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <a class="recent-post-title" style="font-family:'Petit Formal Script'; color: #E0AD97; font-weight:bold;font-size:16px; margin-left: 220px;text-decoration:none;"href="Gallery.html"><ins>Lifestyle</ins></a>
+       <br><br>
+        <a style="font-family:'Ubuntu Condensed'; font-size:25px;margin-left: 120px;text-decoration:none; color:black;"href="Blog detail.html">A DINNER PARTY FOR FRIENDS</a>  
+       <p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 200px;color: #E0AD97;">DECEMBER 15, 2022</p>
+       <p style="font-family:'Ubuntu Condensed'; font-size: 16px;text-align: center; margin-left: -10%;">Our Friends also regularly eats take-out dinners on the water; we bring the dog<br>and chill out. Everyone has a picnic blanket permanently <br>in the boot of their car, it’s lovely.</p>
+
+  </div>
+
+</div>
+
+
+  </div>
+
+
+
+
+
+  
+
+  <div class="sidebar">
+ 
+ <h6>About Me</h6>
+ <br>
+ <a href="About.html"><img src="photographers-min 2.png" style="width:27%"></a>
+  <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br><br>
+  <a style="font-family:'Ubuntu Condensed'; font-size:25px;margin-left: 185px;text-decoration:none; color:black;"href="About.html">LE THANH NAM</a>  
+       <p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 210px;color: #E0AD97;">DECEMBER 15, 2022</p>
+       <p style="font-family:'Ubuntu Condensed'; font-size: 15px;text-align: center; ">I was born and raised in the beautiful state of QUANG NINH and have called it home <br>all my life. I attended FPT University my freshman year of college studying Digital Art.</p>
+<br>
+<h12 style="font-family: 'Freehand'; font-size:40px;margin-left: 180px">Thanh Nam</h12>  
+  <br><br><br><br>
+  
+<h6>Recent Post</h6>
+<br>
+<a href="Blog detail.html"><img src="image 877 1.png" style="width:10%"></a>
+<br>
+<a style="text-decoration: none; margin-left: 220px; color: black;font-family: 'Ubuntu Condensed';font-size: 18px;" href="Blog detail.html">NEW STYLE IDEAS FOR HER</a>
+<br><br>
+<p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 220px;color: #E0AD97;">DECEMBER 15, 2022</p>
+
+<br><br>
+<a href="Blog detail.html"><img src="image 867.png" style="width:10%"></a>
+<br>
+<a style="text-decoration: none; margin-left: 220px; color: black;font-family: 'Ubuntu Condensed';font-size: 18px;" href="Blog detail.html">BEST TIME TO VISIT PARIS</a>
+<br><br>
+<p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 220px;color: #E0AD97;">DECEMBER 15, 2022</p>
+
+<br><br>
+<a href="Blog detail.html"><img src="image 900.png" style="width:10%"></a>
+<br>
+<a style="text-decoration: none; margin-left: 220px; color: black;font-family: 'Ubuntu Condensed';font-size: 18px;" href="Blog detail.html">REAL TALK FRIDAY</a>
+<br><br>
+<p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 220px;color: #E0AD97;">DECEMBER 15, 2022</p>
+
+<br><br>
+<a href="Blog detail.html"><img src="image 899.png" style="width:10%"></a>
+<br>
+<a style="text-decoration: none; margin-left: 220px; color: black;font-family: 'Ubuntu Condensed';font-size: 18px;" href="Blog detail.html">EXPLORING THE ENGLISH COUNTRYSIDE</a>
+<br><br>
+<p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 220px;color: #E0AD97;">DECEMBER 15, 2022</p>
+
+
+<br><br>
+<a href="Blog detail.html"><img src="image 878.png" style="width:10%"></a>
+<br>
+<a style="text-decoration: none; margin-left: 220px; color: black;font-family: 'Ubuntu Condensed';font-size: 18px;" href="Blog detail.html">A DINNER PARTY FOR FRIENDS</a>
+<br><br>
+<p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 220px;color: #E0AD97;">DECEMBER 15, 2022</p>
+
+<br><br><br>
+
+
+
+<h6>NewsLetter</h6>
+<br>
+<div class="form-style-6">
+<h5>Let's stay in touch!</h5>
+<form>
+<input type="text" name="field1" placeholder="Your Name" />
+<input type="email" name="field2" placeholder="Email Address" />
+<input type="submit" value="Send" />
+</form>
+</div>
+
+<br><br>
+<h6>Categories</h6>
+<br>
+<a style="text-decoration: none; color: black;" href="Gallery.html">Lifestyle</a><br><br>
+<a style="text-decoration: none; color: black;" href="Gallery.html">Food</a><br><br>
+<a style="text-decoration: none; color: black;" href="Gallery.html">Nature</a><br><br>
+<a style="text-decoration: none; color: black;" href="Gallery.html">Travel</a><br><br>
+<a style="text-decoration: none; color: black;" href="Gallery.html">Featured</a>
+
+</div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="footer">
+ 
+
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+<a href="https://www.pinterest.com/search/pins/?q=Facebook%20layout&rs=trending&b_id=BK_68y_nqDqTAAAAAAAAAAC34sZq3iRrXnv1f0d5wr_0863EzAFF3zQjalTKUdyIqWmnXn_pK1MQhV7jx1pNO-o&source_id=N7bzVvkA" class="fa fa-pinterest"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<br><br>
+
+ <p style="color: black;font-family:'Ubuntu Condensed';">LE THANH NAM BLOG</p>
+
+
+
+</div>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog detail</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Freehand&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+
+<style>
+
+.item1 {
+position: relative;
+
+}
+
+h1{
+  
+ 
+  font-size: 50px;
+  position: absolute;
+  color: white;
+  top: 200px;
+  right: 400px;
+}
+
+h2{
+  
+  
+  font-size: 50px;
+  position: absolute;
+  color: white;
+  top: 200px;
+  right: 150px;
+}
+
+img{
+
+  position: absolute;
+
+}
+
+.content{
+
+width:90%;
+margin: 30px auto 30px;
+
+}
+
+
+.content .main-content{
+  width: 70%;
+  float: left;
+  
+}
+
+.content .sidebar{
+
+  width:30%;
+  float: left;
+  height: 300px;
+
+
+}
+
+.form-style-6{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  width: 100%;
+  margin: 0px ;
+  padding: 50px;
+  background: #FBF3EE;
+
+}
+.form-style-6 h5{
+
+  padding: 20px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+  margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 0px ;
+  padding: 3%;
+  color: #555;
+  font: 95% Arial, Helvetica, sans-serif;
+border-radius: 6px;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+  box-shadow: 0 0 5px #E59C7C;
+  padding: 3%;
+  border: 1px solid #E59C7C;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  padding: 3%;
+  background: #E0AD97;
+  border-bottom: 0px ;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;  
+  color: #fff;
+border-radius: 6px;
+
+}
+
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+  background: #E59C7C;
+
+}
+
+
+
+
+
+
+.button {
+  border-radius: 0px;
+  background-color: #242A3A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 500px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+h6 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2B3147;
+}
+h6:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 2px;
+    content: " ";
+    text-shadow: none;
+    background-color: #BFACAA;
+    width: 185px;
+}
+
+h6:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 2px;
+    content: " ";
+    text-shadow: none;
+    background-color: #BFACAA;
+    width: 185px;
+}
+
+
+.footer {
+ position: static;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: #FBF3EE;
+ color: white;
+ text-align: center;
+ padding-top: 20px;
+ padding-bottom: 10px;
+
+}
+
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #E0AD97;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #E0AD97;
+  color: white;
+}
+
+.fa-google {
+  background: #E0AD97;
+  color: white;
+}
+
+.fa-instagram {
+  background: #E0AD97;
+  color: white;
+}
+
+
+#more {display: none;}
+
+</style>
+
+
+
+
+<body>
+
+
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    
+      <div class="collapse navbar-collapse" id="mynavbar" style="margin-left: 350px;">
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Home page.html" style="margin-left: 100px; padding-top: 40px; font-family: 'Ubuntu Condensed', sans-serif; font-weight: bold; font-size: 18px;">HOME</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="About.html" style="margin-left: 100px; padding-top: 40px;font-family: 'Ubuntu Condensed', sans-serif;font-weight: bold; font-size: 18px;">ABOUT</a>
+        </li>
+
+       
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="Home page.html" style="margin-left: 80px;padding-top: 20px; font-family: 'Petit Formal Script', cursive; sans-serif; font-size: 40px; font-weight: bold; color:#2B3147;">LE THANH NAM<br><p style="font-family:'Ubuntu Condensed'; font-size:18px;margin-left: 80px; color:#E0AD97;">PHOTOGRAPHER & BLOGGER</p></a>
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="Contact us.html" style="margin-left: 100px; padding-top: 40px;font-family: 'Ubuntu Condensed', sans-serif;font-weight: bold; font-size: 18px;">CONTACT</a>
+        </li>
+        
+         <li class="nav-item">
+          <a class="nav-link" href="Gallery.html" style="margin-left: 100px; padding-top: 40px; font-family: 'Ubuntu Condensed', sans-serif;font-weight: bold; font-size: 18px;">GALLERY</a>
+        </li>
+     
+    </div>
+  </div>
+</nav>
+
+
+<br><br><br>
+
+
+
+<div class="content">
+  <div class="main-content">
+  
+
+    <h7 class="recent-post-title" style="font-family:'Petit Formal Script'; color: #E0AD97; font-weight:bold;margin-left: 550px;font-size:18px;"><ins>Lifestyle</ins></h7>
+       <br>
+       <h8 style="font-family:'Ubuntu Condensed'; font-size:30px; margin-left: 450px;">NEW STYLE IDEAS FOR HER</h8>  
+  <br><br>
+  <img src="image 877.png" style width="60%">
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <p style="font-family:'Ubuntu Condensed'; font-size: 16px"><br>“If I think honestly about my style, I’m still reconciling with how I’ve felt about my body. Growing up, I absorbed a lot of cultural and generational expectations around dressing — my mom<br> always said I should wear clothes that were ‘flattering.’ And flattering is code for looking thinner. So, I was always dressing to fix my ‘flaws.'”</p>
+
+       <p style="font-family:'Ubuntu Condensed'; font-size:16px"><br>“I grew uncomfortable wearing sleeveless tops or clingy fabrics. I remember feeling self-conscious about the size of my breasts and always wanting to hide in shapeless clothes. But I love<br>color and patterns, and now I try to approach fashion in a comfortable way. I still won’t wear a tube top or anything — maybe that enlightenment will come for me later — but I try to wear<br>the things I feel good in.”</p>
+
+
+       <p style="font-family:'Ubuntu Condensed'; font-size:16px"><br>Winter is a great time to style your long sleeve outfits and to look fabulous in the cold days that are expecting us. Many women are thinking that there is no space for looking stunning and<br> fashionable in the winter since there are not many opportunities to combine long-sleeve dresses with other items. Unfortunately, while reading different blogs and magazines that are not even<br>written by fashion experts women find out that they should not wear two prints together, more than 2 layers, or mix different materials and designs.</p>
+
+
+        <p style="font-family:'Ubuntu Condensed'; font-size:16px"><br>Well, these are very frustrating lies that can sound overwhelming for women who are trying different ways to look stylish. The good news is that we are here to change that opinion. In general,<br> long-sleeve outfits provide women with a chance to look stunning and to create a very stylish and breathtaking appearance. This especially refers to the women that are bold enough to try new<br> things and different types of designs. In this article, we are going to look at ways how you can style your long sleeve dress for different occasions and look perfect. There are so many long sleeve dress fashionable combinations that you can try on and grab the attention of everyone when you walk <br>into the room.</p>
+
+
+        <p style="font-family:'Ubuntu Condensed'; font-size:16px"><br>Best of all, there is absolutely no need to wear scarves or expensive pieces of jewelry to achieve that goal. You can keep things very simple, yet look unbelievably expensive and glamorous. The key to achieving that lies in putting things perfectly and we are here to give you some ideas. Remember one thing – once you pick a dress with a long sleeve, you already have a statement piece in your outfit. Now, you just need to find a way to highlight it.</p>
+
+
+        <p style="font-family:'Ubuntu Condensed'; font-size:16px"><br>As we said, when you wear a dress with long sleeves, you already have a stunning appearance. However, when it comes to making the whole outfit more fashionable, the first thing that you should <br>think about is which pair of boots you should choose. You can consider styling your overall appearance with either taller or ankle boots. Do not be afraid to try both combinations and see which one you like more.</p>
+
+
+        <p style="font-family:'Ubuntu Condensed'; font-size:16px"><br>If you choose to add tights and boots to your outfit, no matter whether they are short or knee-high, you will elevate your long sleeve dress and make a cozy and sophisticated outfit. In case you choose tight black or red dress for a romantic date, it is better to choose ankle boots. On the other hand, if you are looking for a fashionable style for your office day, you can combine an elegant dress with<br> higher boots. In both cases, no matter whether you are going on a date or to work, you will look attractive and sexy.</p>
+<br>
+<h12 style="font-family:'Ubuntu Condensed'; font-weight:bold;">Share</h12>
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+<a href="https://www.pinterest.com/search/pins/?q=Facebook%20layout&rs=trending&b_id=BK_68y_nqDqTAAAAAAAAAAC34sZq3iRrXnv1f0d5wr_0863EzAFF3zQjalTKUdyIqWmnXn_pK1MQhV7jx1pNO-o&source_id=N7bzVvkA" class="fa fa-pinterest"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>  
+
+
+  
+</div>
+
+
+
+
+
+  
+
+  <div class="sidebar">
+ 
+ <h6>About Me</h6>
+ <br>
+ <a href="About.html"><img src="photographers-min 2.png" style="width:27%"></a>
+  <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br><br>
+  <a style="font-family:'Ubuntu Condensed'; font-size:25px;margin-left: 185px;text-decoration:none; color:black;"href="About.html">LE THANH NAM</a>  
+       <p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 210px;color: #E0AD97;">DECEMBER 15, 2022</p>
+       <p style="font-family:'Ubuntu Condensed'; font-size: 15px;text-align: center; ">I was born and raised in the beautiful state of QUANG NINH and have called it home <br>all my life. I attended FPT University my freshman year of college studying Digital Art.</p>
+<br>
+<h12 style="font-family: 'Freehand'; font-size:40px;margin-left: 180px">Thanh Nam</h12>  
+  <br><br><br><br>
+  
+<h6>Recent Post</h6>
+<br>
+<a href="Blog detail.html"><img src="image 877 1.png" style="width:10%"></a>
+<br>
+<a style="text-decoration: none; margin-left: 220px; color: black;font-family: 'Ubuntu Condensed';font-size: 18px;" href="Blog detail.html">NEW STYLE IDEAS FOR HER</a>
+<br><br>
+<p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 220px;color: #E0AD97;">DECEMBER 15, 2022</p>
+
+<br><br>
+<a href="Blog detail.html"><img src="image 867.png" style="width:10%"></a>
+<br>
+<a style="text-decoration: none; margin-left: 220px; color: black;font-family: 'Ubuntu Condensed';font-size: 18px;" href="Blog detail.html">BEST TIME TO VISIT PARIS</a>
+<br><br>
+<p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 220px;color: #E0AD97;">DECEMBER 15, 2022</p>
+
+<br><br>
+<a href="Blog detail.html"><img src="image 900.png" style="width:10%"></a>
+<br>
+<a style="text-decoration: none; margin-left: 220px; color: black;font-family: 'Ubuntu Condensed';font-size: 18px;" href="Blog detail.html">REAL TALK FRIDAY</a>
+<br><br>
+<p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 220px;color: #E0AD97;">DECEMBER 15, 2022</p>
+
+<br><br>
+<a href="Blog detail.html"><img src="image 899.png" style="width:10%"></a>
+<br>
+<a style="text-decoration: none; margin-left: 220px; color: black;font-family: 'Ubuntu Condensed';font-size: 18px;" href="Blog detail.html">EXPLORING THE ENGLISH COUNTRYSIDE</a>
+<br><br>
+<p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 220px;color: #E0AD97;">DECEMBER 15, 2022</p>
+
+
+<br><br>
+<a href="Blog detail.html"><img src="image 878.png" style="width:10%"></a>
+<br>
+<a style="text-decoration: none; margin-left: 220px; color: black;font-family: 'Ubuntu Condensed';font-size: 18px;" href="Blog detail.html">A DINNER PARTY FOR FRIENDS</a>
+<br><br>
+<p style="font-family:'Ubuntu Condensed'; font-size: 14px;margin-left: 220px;color: #E0AD97;">DECEMBER 15, 2022</p>
+
+<br><br><br>
+
+
+
+<h6>NewsLetter</h6>
+<br>
+<div class="form-style-6">
+<h5>Let's stay in touch!</h5>
+<form>
+<input type="text" name="field1" placeholder="Your Name" />
+<input type="email" name="field2" placeholder="Email Address" />
+<input type="submit" value="Send" />
+</form>
+</div>
+
+<br><br>
+<h6>Categories</h6>
+<br>
+<a style="text-decoration: none; color: black;" href="Gallery.html">Lifestyle</a><br><br>
+<a style="text-decoration: none; color: black;" href="Gallery.html">Food</a><br><br>
+<a style="text-decoration: none; color: black;" href="Gallery.html">Nature</a><br><br>
+<a style="text-decoration: none; color: black;" href="Gallery.html">Travel</a><br><br>
+<a style="text-decoration: none; color: black;" href="Gallery.html">Featured</a>
+
+</div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="footer">
+ 
+
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+<a href="https://www.pinterest.com/search/pins/?q=Facebook%20layout&rs=trending&b_id=BK_68y_nqDqTAAAAAAAAAAC34sZq3iRrXnv1f0d5wr_0863EzAFF3zQjalTKUdyIqWmnXn_pK1MQhV7jx1pNO-o&source_id=N7bzVvkA" class="fa fa-pinterest"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<br><br>
+
+ <p style="color: black;font-family:'Ubuntu Condensed';">LE THANH NAM BLOG</p>
+
+
+
+</div>
+
+
+</body>
+</html>
+
+
+
